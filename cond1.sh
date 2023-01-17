@@ -3,6 +3,7 @@
 #IFS=',' read -r -a array <<< "$1"
 
 #Write your code here
+IFS=','
 sum=0; 
 for i in ${@}; 
 do
