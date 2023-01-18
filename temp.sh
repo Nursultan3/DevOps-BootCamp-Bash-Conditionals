@@ -13,19 +13,19 @@ k=
 
 case $string in
    *"$Cel"*)
-   a=`echo "${string%C} + 273" | bc`
+   a=$(echo "${string%C} + 273" | bc)
    echo "${a}K"
    ;;
    *"$Kel"*)
-   b=`echo "${string%K} - 273" |bc`
+   b=$(echo "${string%K} - 273" |bc)
    echo "${b}C"
    ;;
    *"$cel"*)
-   c=`echo "${string%c} + 273" |bc`
+   c=$(echo "${string%c} + 273" |bc)
    echo "${c}K"
    ;;
    *"$kel"*)
-   k=`echo "${string%k} + 273" |bc`
+   k=$(echo "${string%k} + 273" |bc)
    echo "${k}K"
    ;;
 esac 
